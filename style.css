@@ -1,86 +1,195 @@
-* {
+*{
     box-sizing: border-box;
+
 }
-ul {
-margin:0;
-padding: 0;
+
+/* Remove margin/padding from UL */
+
+ul{
+
+    margin: 0;
+
+    padding: 0;
+
 }
+
+
+/* Style my List */
+
 ul li { 
-cursor: pointer;
-position: relative;
-padding: 12px 8px 12px 40px;
-background-color: lightsalmon;
-font-size: 18x;
-transition: .2s;
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select: none;
-user-select: none;
+
+    cursor: pointer;
+
+    position: relative;
+
+    padding: 12px 8px 12px 40px;
+
+    background: lightsalmon;
+
+    font-size: 18px;
+
+    transition: .2s;
+
+/* Make LI unselectable */
+
+    -webkit-user-select: none;
+
+    -moz-user-select: none;
+
+    -ms-user-select: none;
+
+    user-select: none;
+
 }
 
-ul li:nth-child(odd) {
-background-color: coral;
+
+/* Add odd /even colors to list */
+
+ul li:nth-child(odd){
+
+    background:coral
+
 }
 
-ul li:hover { 
-    background: cornflowerblue;
-    }
 
-ul li.checked ::before {
+ul li:hover{
+
+    background: cornflowerblue
+
+}
+
+/* Add checkmark when clicked */
+
+ul li.checked::before{
+
     content:'';
+
     position: absolute;
+
+    border-color: antiquewhite;;
+
     border-style: solid;
-    border-color: antiquewhite;
-    border-width: 0px 2px 2px 0;
-    top:10px;
-    left:10px;
-transform:rotate(45deg);
-height:15px;
-width:7px;
+
+    border-width: 0 2px 2px 0;
+
+    top: 10px;
+
+    left: 10px;
+
+    transform: rotate(45deg);
+
+    height: 15px;
+
+    width: 7px;
+
 }
+
+
+/* Style close btn */
+
 .close {
-    position: absolute;
-    right:0;
-    top:0;
-    padding: 12pxx 16px 12px 16px
+
+  position: absolute;
+
+  right: 0;
+
+  top: 0;
+
+  padding: 12px 16px 12px 16px;
+
 }
-.close hover{
-    background-color: blueviolet;
-    color:white;
+
+
+.close:hover {
+
+  background-color: skyblue;
+
+  color: white;
+
 }
-.header {
+
+
+/* Header Style*/
+
+
+.header{
+
     background-color: maroon;
+
     padding: 30px 40px;
-    color:white;
+
+    color: white;
+
     text-align: center;
+
 }
-input {
-    margin:0;
-    border: none;
-    border-radius: 10px;
-    width:75%;
-    padding:10px;
-    float:left;
-    font-size: 16px;
+
+
+/* Style Input Button */
+
+input{
+
+  margin: 0;
+
+  border: none;
+
+  border-radius: 6px;
+
+  width: 75%;
+
+  padding: 10px;
+
+  float: left;
+
+  font-size: 16px;
+
 }
+
+
+/* Style the "Add" button */
+
 .addBtn {
-padding:10px;
-width:25%;
-background-color: firebrick;
-color:whitesmoke;
-float:left;
-text-align: center;
-font-size: 16px;
-cursor: pointer;
-transition: 0.3;
-border-radius: 6px;
+
+  padding: 10px;
+
+  width: 25%;
+
+  background: firebrick;
+
+  color: whitesmoke;
+
+  float: left;
+
+  text-align: center;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  border-radius: 6px;
+
 }
-.header:after{
-    content:'';
-    display:table;
-    clear:both;
+
+
+/* Clear floats after the header */
+
+.header:after {
+
+  content: "";
+
+  display: table;
+
+  clear: both;
+
 }
+
+
 .addBtn:hover {
-    background-color: powderblue;
-    color:white;
+
+  background-color: blueviolet;
+
+  color: white;
+
 }
